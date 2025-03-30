@@ -899,7 +899,11 @@ span {
     }
 
     .home-content p {
-        font-size: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .home-content h3 {
+        line-height: 0.9;
     }
 
     .home-img img {
@@ -907,8 +911,24 @@ span {
         padding-top: 0;
     }
 
+    .masterpiece {
+        padding: 0;
+    }
+
+    .master-cont .heading {
+        padding-bottom: 20px;
+    }
+
     .about-img img {
         width: 95vw;
+    }
+
+    .about {
+        padding: 5rem 10px;
+    }
+
+    .about-content h2, h3 {
+        text-align: center;
     }
 
     .about-content p{
