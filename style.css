@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bg-color: #001c28; /* dati na kulay #1f242d*/
+    --bg-color: rgb(0, 28, 40); /* dati na kulay #1f242d*/
     --second-bg-color: rgb(41, 57, 61) ; 
     --text-color: #fff;
     --main-color: #0ef;
@@ -231,6 +231,7 @@ span {
     display: flex;
     justify-content: center; /* Centers fav-cont inside */
     align-items: center;
+    background-color: var(--second-bg-color);
 }
 
 .master-cont {
@@ -261,7 +262,7 @@ span {
     max-width: 600px;
     height: 100px; /* Adjust height */
     aspect-ratio: 16 / 9;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* overflow: hidden; */
     display: flex;
     align-items: center;
@@ -270,7 +271,7 @@ span {
 }
 
 .fav:nth-child(odd) {
-    background-color: rgb(41, 57, 61, 0.2);
+    background-color: rgb(0, 28, 40, .2);
 }
 
 .fav h1 {
@@ -317,7 +318,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color)
+    background-color: var(--bg-color);
  }
 
  .about-img img {
