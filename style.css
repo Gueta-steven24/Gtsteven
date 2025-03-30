@@ -226,6 +226,92 @@ span {
     box-shadow: none;
  }
 
+.masterpiece {
+    /* padding: 20px; Adds space inside the section */
+    display: flex;
+    justify-content: center; /* Centers fav-cont inside */
+    align-items: center;
+}
+
+.master-cont {
+    width: calc(100% - 2in); /* Makes width based on screen size with 1-inch margins */
+    max-width: 1200px; /* Optional: Set a max width to avoid it getting too wide */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds some spacing inside */
+}
+
+.master-cont > * { 
+    width: 100%; /* Ensures child elements take full width of .master-cont */
+}
+
+
+.fav-cont {
+    aspect-ratio: 16 / 9; /* Maintains 1920x1080 ratio */
+    /* border: 3px solid cyan; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fav {
+    width: 100%; 
+    max-width: 600px;
+    height: 100px; /* Adjust height */
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.fav:nth-child(odd) {
+    background-color: rgb(41, 57, 61, 0.2);
+}
+
+.fav h1 {
+    margin: 0;
+    width: 40%;
+    text-align: right;
+}
+
+
+/* Align text to the left for odd items (1st, 3rd, etc.) */
+.fav:nth-child(odd) h1 {
+    text-align: left;
+}
+
+/* Align text to the right for even items (2nd, 4th, etc.) */
+.fav:nth-child(even) h1 {
+    text-align: right;
+}
+
+.fav img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    animation: float 2s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+.fav img:hover {
+    transform: scale(3);
+    animation: none;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* Moves up */
+    100% { transform: translateY(0); } /* Moves back to original position */
+}
+
+
  .about {
     display: flex;
     justify-content: center;
