@@ -885,6 +885,14 @@ span {
 }
 
 @media (max-width: 365px)  {
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
     .home-img img {
         width: 95vw;
         padding-top: 0;
@@ -895,7 +903,7 @@ span {
     }
 
     .about-content p{
-        font-size: 1.8rem;
+        font-size: 1rem;
      }
 
     .portfolio-container {
