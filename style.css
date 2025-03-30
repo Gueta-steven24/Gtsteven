@@ -742,6 +742,12 @@ span {
 }
 
 @media (max-width: 617px) {
+    /* .master-cont {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    } */
+
     .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -862,6 +868,12 @@ span {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .master-cont {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
     }
 
     .contact form .input-box input {
