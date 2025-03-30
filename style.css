@@ -25,6 +25,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -894,38 +895,15 @@ span {
 @media (max-width: 365px)  {
     .home-content {
         text-align: center;
-        padding: 0 20px;
     }
 
     .home-content p {
-        font-size: 1.3rem;
-    }
-
-    .home-content h3 {
-        font-size: 20px;
-        line-height: 15px;
+        font-size: 1rem;
     }
 
     .home-img img {
         width: 95vw;
         padding-top: 0;
-    }
-
-    .masterpiece {
-        padding: 0;
-    }
-
-    .master-cont h2 {
-        padding-bottom: 50px;
-        margin: 0;
-    }
-
-    .about {
-        padding: 20px;
-    }
-
-    .about-content h2, h3 {
-        text-align: center;
     }
 
     .about-img img {
