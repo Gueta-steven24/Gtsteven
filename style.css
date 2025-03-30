@@ -638,9 +638,6 @@ span {
     .diamondcontact {
         width: 70vh;
     }
-
-
-
 }
 
 
@@ -705,6 +702,10 @@ span {
     .home { 
         flex-direction: column;
     } 
+
+    .home-content {
+        text-align: center;
+    }
 
      
     .home-img img {
